@@ -5,7 +5,7 @@ services:
             context: .
             dockerfile: Dockerfile
         ports:
-            - ${PORT}:8000
+            - ${PORT}:8080
         environment:
             - CONNECTION_URL=${CONNECTION_URL}
             - API_KEY=${API_KEY}

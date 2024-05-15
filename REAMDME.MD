@@ -56,4 +56,4 @@ Ensure you are in the root directory of the project:
 > npm run docker
 
 6- Go to browser then past this url:
-http://localhost:8000/api-docs
+http://localhost:8080/api-docs
