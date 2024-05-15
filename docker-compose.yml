@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - ${PORT}:8000
+        environment:
+            - CONNECTION_URL=${CONNECTION_URL}
+            - API_KEY=${API_KEY}
+            - API_URL=${API_URL}
+            - API_READ_ACCESSS_TOKEN=${API_READ_ACCESSS_TOKEN}
+        env_file:
+            - .env
